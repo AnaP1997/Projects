@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Montserrat", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header {
+  padding: 15px;
+  width: 100vw;
+  position: fixed;
+}
+.header-con {
+  width: 70%;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-con nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.header-con nav a {
+  text-decoration: none;
+  color: beige;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header-con h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: beige;
+}
+main {
+  width: 100vw;
+}
+.main-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../img/nyh.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page h2 {
+  font-size: 44px;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+}
+.main-page p {
+  font-size: 24px;
+  color: #fff;
+  word-spacing: 7px;
+}
+.main-page button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.main-page button:hover {
+  box-shadow: 0px 3px 10px white;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.about {
+  width: 100vw;
+  padding: 25px 0;
+}
+.about h2 {
+  text-align: center;
+}
+.about-content img {
+  width: 250px;
+}
+.about-content {
+  display: flex;
+  width: 70%;
+  margin: 15px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-content p {
+  width: 60%;
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 25px;
+}
+.services {
+  width: 100vw;
+  padding: 25px 0;
+}
+.services h2 {
+  text-align: center;
+}
+.rooms {
+  width: 70%;
+  margin: 15px auto;
+  display: flex;
+  column-gap: 25px;
+}
+.room {
+  background-color: #dcdcdc;
+  padding: 25px;
+  border-radius: 15px;
+}
+.room h4 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.room hr {
+  border: none;
+  border-top: 5px dotted black;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.room p {
+  text-align: center;
+  line-height: 25px;
+}
+.room ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 15px;
+}
+.room li {
+  border-bottom: 1.5px solid black;
+  margin: 10px;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.contact-us {
+  width: 100vw;
+  padding: 25px 0;
+}
+.contact-us h2 {
+  text-align: center;
+}
+.form-con {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.form-con form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.form-con form input {
+  padding: 10px 15px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom: 1.5px solid black;
+}
+.form-con form input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: linear-gradient(130deg, #1488cc, #2b32b2);
+  color: #fff;
+}
+.form-con form input[type="submit"]:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.3s;
+  transform: scale(1.05);
+}
+.form-con form input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #2b32b2;
+  transition-duration: 0.3s;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+}

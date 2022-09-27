@@ -1,0 +1,78 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+}
+.candidats{
+margin-left: -100px;
+}
+.candidats button{
+    
+    margin-left:300px;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
+.head{
+    display: flex;
+    align-items: center;
+    background-color: rgb(131, 169, 169);
+}
+.head h1{
+    color: #f49e4c;
+    
+}
+.title{
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.candidat{
+    margin-left: 230px;
+    width: 220px;
+    padding: 20px;
+    border: solid rgb(131, 169, 169) 2px;
+    border-radius: 25px;
+}
+.addOfert{
+    display: flex;
+     flex-direction: column;
+    margin-left: -500px;
+    margin-top: 60px;
+    font-size: large;
+   
+}
+#form{
+    margin-top: 50px;
+    margin-left: 300px;
+
+}
+#form input{
+    margin:12px;
+}
+.oferts{
+    
+margin-left:-1000px ;
+    display: flex;
+    flex-direction:column;
+   
+}
+.seeOf{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.oferte{
+    margin-left: 100px;
+}
+.exchange{
+    padding: 10px;
+    margin-top:200px ;
+    border: solid rgb(131, 169, 169) 2px;
+    border-radius: 25px;
+    height: 150px;
+}

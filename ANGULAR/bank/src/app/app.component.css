@@ -1,0 +1,25 @@
+header{
+    height: 50px;
+    font-size: 40px;
+    background-color: #cbc0d3;
+    margin-bottom: 20px;
+    color: #001d3d;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}
+.active{
+    background-color: #dee2ff;
+    color: #8e9aaf;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+nav a{
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #001d3d;
+
+}

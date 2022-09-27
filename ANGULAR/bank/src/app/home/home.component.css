@@ -1,0 +1,31 @@
+.home{
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("./bank.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    
+  
+}
+.home h2{
+    padding-top: 80px;
+    padding-left: 200px;
+    color:#dee2ff;
+}
+.home h3{
+    padding-left: 500px;
+    color:#dee2ff;  
+}
+.home p{
+    padding-left: 300px;
+}
+.text{
+    padding-top: 200px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cbc0d3;  
+}

@@ -1,0 +1,26 @@
+<div class="main-container">
+    <h3>Currency Converter</h3>
+    <div class="selection-cont">
+        <input type="text" placeholder="0" name="value1" #value1 (mouseleave)="inputVal(value1.value)">
+        <select #c1 name="" id="country1" (mouseleave)="chagebase(c1.value)">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="MDL">MDL</option>
+        </select>
+        <p>to</p>
+        <select #c2 name="" id="country1" (mouseleave)="tocountry(c2.value)">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="MDL">MDL</option>
+        </select>
+        
+        <button (click)="convert()">Convert</button>
+    </div>
+        <div class="result-container">
+          
+            <p>{{this.value1}} {{base}}</p>
+            <p>=</p>
+            <p>{{r|number:'.2'}} {{cont2}}</p>
+        </div>
+    
+</div>
