@@ -1,0 +1,13 @@
+html{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:url('daniel.jpg');
+    background-size: cover;
+  
+}
+.header{
+    display: flex;
+    flex-direction:row;
+    padding-left: 50px;
+}
+
+
