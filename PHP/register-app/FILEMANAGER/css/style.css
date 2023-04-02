@@ -1,0 +1,44 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background-color:#edede9 ;
+}
+
+form{
+    display: flex;
+    align-items: center;
+
+}
+label{
+    background-color: rgb(0,210,0);
+    padding: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+label input{
+    display: none;
+}
+
+button{
+    background-color: rgb(10,55,255);
+    padding: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size:16px;
+    color: #edede9;
+}
+.image{
+    width: 400px;
+    height:400px;
+}
+.image img{
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
