@@ -1,0 +1,123 @@
+using System.Globalization;
+
+ 
+
+NumberFormatInfo setPrecision = new NumberFormatInfo();
+setPrecision.NumberDecimalDigits = 3;
+
+ 
+
+char option = ' ';
+double a, b = 0;
+List<string> history = new List<string>();
+
+ 
+
+Console.Write("-> ");
+a = Convert.ToDouble(Console.ReadLine());
+history.Add($"{a} ");
+
+ 
+
+while (option != 'x')
+{
+    Console.Clear();
+    Console.WriteLine($"Calculator " + a.ToString("N", setPrecision));
+    Console.Write("H: ");
+    foreach (string h in history)
+    {
+        Console.Write(h);
+    }
+    Console.WriteLine();
+    Console.WriteLine("+. Adunare");
+    Console.WriteLine("-. Scadere");
+    Console.WriteLine("*. Inmultire");
+    Console.WriteLine("/. Impartire");
+    Console.WriteLine("S. Patrat");
+    Console.WriteLine("s. Patrat din X");
+    Console.WriteLine("r. Radical");
+    Console.WriteLine("a. Modul");
+    Console.WriteLine("C. Clean");
+
+ 
+
+    Console.Write("(+,-,*,/) -> ");
+    option = Console.ReadLine()[0];
+    if (option != 's')
+    {
+        history.Add($"{option} ");
+    }
+
+ 
+
+    if (option == '+' || option == '-' || option == '*' || option == '/')
+    {
+        Console.Write("-> ");
+        b = Convert.ToDouble(Console.ReadLine());
+        history.Add($"{b} ");
+    }
+
+ 
+
+    switch (option)
+    {
+        case '+':
+            a = addition(a, b);
+            break;
+        case '-':
+            a = subtract(a, b);
+            break;
+        case '*':
+            a = multiply(a, b);
+            break;
+        case '/':
+            a = devide(a, b);
+            break;
+        case 'S':
+            a = Math.Pow(a, 2);
+            break;
+        case 's':
+            Console.Write("Introduceti puterea -> ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            a = Math.Pow(a, x);
+            history.Add($"{option}^{x} ");
+            break;
+        case 'r':
+            a = Math.Sqrt(a);
+            break;
+        case 'a':
+            a = Math.Abs(a);
+            break;
+        case 'C':
+            a = 0;
+            break;
+    }
+}
+
+ 
+
+double addition(double a, double b)
+{
+    return a + b;
+}
+
+ 
+
+double subtract(double a, double b)
+{
+    return a - b;
+}
+
+ 
+
+double multiply(double a, double b)
+{
+    return a * b;
+}
+
+ 
+
+double devide(double a, double b)
+{
+    return a / b;
+}
