@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1640247165 source:d:\cpp\meniu_retete\main.cpp
+	<cmath>
+	<cstdlib>
+	<iostream>
+	<ctime>
+	<cstring>
+	<io.h>
+	<conio.h>
+	<windows.h>
+
